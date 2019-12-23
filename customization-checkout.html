@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.pay.super.com/paysdk/latest/paysuper.js"></script>
+</head>
+<body>
+</body>
+<script>
+    const paySuper = new PaySuper({
+        "project": "5dcd11bc218dc30001d7098f",
+        "amount": 10,
+        "currency": "USD",
+        "type": "simple",
+        "viewSchemeConfig": {
+            cartAccentColor: '#7f55d6',
+            checkboxCheckedIconColor: '#7f55d6',
+            checkboxHoverColor: '#7f55d6',
+            buttonBoxColor: '#7f55d6',
+            buttonActiveBoxColor: '#7f55d6',
+            buttonHoverBoxColor: '#7f55d6',
+            tipCartBoxColor: '#7f55d6',
+            tipFormBoxColor: '#7f55d6',
+            iconInfoHoverColor: '#7f55d6',
+            iconPositiveColor: '#7f55d6',
+            inputFocusBorderColor: '#7f55d6',
+            selectFocusBorderColor: '#7f55d6'
+        },
+        "viewScheme": "light"
+    });
+
+    paySuper.renderModal();
+</script>
+</html>
