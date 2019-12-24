@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.pay.super.com/paysdk/latest/paysuper.js"></script>
+</head>
+<body>
+</body>
+<script>
+    const paySuper = new PaySuper({
+        "project": "5dcd11bc218dc30001d7098f",
+        "amount": 10,
+        "currency": "USD",
+        "type": "simple"
+    });
+
+    paySuper.renderModal();
+</script>
+</html>

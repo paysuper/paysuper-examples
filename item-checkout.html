@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.pay.super.com/paysdk/latest/paysuper.js"></script>
+</head>
+<body>
+</body>
+<script>
+    const paySuper = new PaySuper({
+      project: '5dcd11bc218dc30001d7098f',
+      products: [
+        '5dcdb73d218dc30001d73c25',
+        '5dcdb841218dc30001d73c26'
+      ]
+    });
+
+    paySuper.renderModal();
+</script>
+</html>
